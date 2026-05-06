@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchMovieDetails } from "../redux/movieSlice";
+import { makeFallbackPoster } from "../utils/posterFallback";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -27,19 +28,18 @@ function MovieDetails() {
   );
 
   const prices = movieDetails.prices;
+  const fallback = makeFallbackPoster(movieDetails.title);
 
   return (
     <div className="container">
       <div className="detail-wrap">
         <div className="detail-poster">
           <img
-            src={movieDetails.image && movieDetails.image.startsWith("http")
-              ? movieDetails.image
-              : `https://placehold.co/400x600/1c2030/e6e9f2?text=${encodeURIComponent(movieDetails.title)}`}
+            src={movieDetails.image && movieDetails.image.startsWith("http") ? movieDetails.image : fallback}
             alt={movieDetails.title}
             onError={(e) => {
               e.target.onerror = null;
-              e.target.src = `https://placehold.co/400x600/1c2030/e6e9f2?text=${encodeURIComponent(movieDetails.title)}`;
+              e.target.src = fallback;
             }}
           />
         </div>

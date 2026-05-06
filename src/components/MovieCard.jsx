@@ -1,24 +1,22 @@
 import { useNavigate } from "react-router-dom";
+import { makeFallbackPoster } from "../utils/posterFallback";
 
 function MovieCard({ movie }) {
   const navigate = useNavigate();
   const movieId = movie.id || movie._id;
+  const fallback = makeFallbackPoster(movie.title);
 
-  const imgSrc = movie.image && movie.image.startsWith("http")
-    ? movie.image
-    : `https://placehold.co/400x600/1c2030/e6e9f2?text=${encodeURIComponent(movie.title)}`;
+  const imgSrc = movie.image && movie.image.startsWith("http") ? movie.image : fallback;
 
   const handleError = (e) => {
     e.target.onerror = null;
-    e.target.src = `https://placehold.co/400x600/1c2030/e6e9f2?text=${encodeURIComponent(movie.title)}`;
+    e.target.src = fallback;
   };
 
   return (
     <div className="movie-card" onClick={() => navigate(`/movie/${movieId}`)}>
       <div className="movie-poster">
-        {movie.rating && (
-          <span className="rating-badge">★ {movie.rating}</span>
-        )}
+        {movie.rating && <span className="rating-badge">★ {movie.rating}</span>}
         <img src={imgSrc} alt={movie.title} onError={handleError} />
       </div>
       <div className="movie-body">
