@@ -1,0 +1,116 @@
+{
+  "latest": [
+    {
+      "id": 1,
+      "title": "Thor",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Thor_Ragnarok_poster.jpg",
+      "genre": "Action, Adventure, Comedy",
+      "director": "Taika Waititi",
+      "stars": "Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo",
+      "plot": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarok.",
+      "language": "English",
+      "rating": "8.2",
+      "duration": "2h 10m",
+      "releasedDate": "2017-11-03",
+      "currency": "INR",
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 2,
+      "title": "Wonder Woman",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/ed/Wonder_Woman_%282017_film%29.jpg",
+      "genre": "Action, Adventure, Fantasy",
+      "director": "Patty Jenkins",
+      "stars": "Gal Gadot, Chris Pine, Robin Wright, Lucy Davis",
+      "plot": "Diana leaves home to fight a war, discovering her full powers and true destiny.",
+      "language": "English",
+      "rating": "7.9",
+      "duration": "2h 21m",
+      "releasedDate": "2017-06-02",
+      "currency": "INR",
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    },
+    {
+      "id": 3,
+      "title": "Logan",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Logan_2017_poster.jpg",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "A weary Logan cares for an ailing Professor X until a young mutant arrives.",
+      "language": "English",
+      "rating": "8.1",
+      "duration": "2h 17m",
+      "releasedDate": "2017-03-03",
+      "currency": "INR",
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      }
+    }
+  ],
+  "upcomingMovies": [
+    {
+      "id": 4,
+      "title": "Despicable Me 3",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/2c/Despicable_Me_3.jpg",
+      "genre": "Animation, Comedy, Family",
+      "director": "Pierre Coffin",
+      "stars": "Steve Carell, Kristen Wiig",
+      "plot": "Gru meets his long-lost twin brother Dru for one last criminal heist.",
+      "language": "English",
+      "rating": "7.0",
+      "duration": "1h 36m",
+      "releasedDate": "2017-06-30"
+    },
+    {
+      "id": 5,
+      "title": "Star Wars",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Star_Wars_The_Last_Jedi.jpg",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "Rian Johnson",
+      "stars": "Daisy Ridley, Mark Hamill, John Boyega",
+      "plot": "Rey develops her abilities with Luke Skywalker while the Resistance prepares for battle.",
+      "language": "English",
+      "rating": "7.5",
+      "duration": "2h 32m",
+      "releasedDate": "2017-12-15"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Live Music Concert",
+      "description": "Enjoy an amazing live music concert in the city.",
+      "date": "2026-04-20",
+      "location": "Pune",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Drama Play Night",
+      "description": "A famous theatre team is performing a special play.",
+      "date": "2026-04-22",
+      "location": "Mumbai",
+      "image": "https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Dance Competition",
+      "description": "Inter-college dance competition with exciting performances.",
+      "date": "2026-04-25",
+      "location": "Chinchwad",
+      "image": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=600&q=80"
+    }
+  ],
+  "transactions": []
+}
